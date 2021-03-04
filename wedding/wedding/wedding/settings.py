@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'appz.core',
     'ckeditor',
-    'accounts',
+    'appz.accounts',
 ]
 
 MIDDLEWARE = [
