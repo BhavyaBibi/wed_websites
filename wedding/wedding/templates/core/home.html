@@ -52,8 +52,9 @@
                       {{dest.bride}}
                     </div>
                   </div>
+                  {% endfor %}
                 </li>
-                {% endfor%}
+
                 <!-- SLIDE  -->
                 <li data-transition="fade" data-slotamount="7" data-masterspeed="600" data-saveperformance="off">
                   <!-- MAIN IMAGE -->
@@ -73,11 +74,14 @@
                   </div>
 
                   <!-- LAYER NR. 2 -->
+                  {%for dest in dests %}
                   <div class="tp-caption tztitle2 tp-fade stt tp-resizeme" data-x="center" data-hoffset="0"
                     data-y="center" data-voffset="-85" data-speed="600" data-start="950" data-easing="Power0.easeInOut"
                     data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
-                    data-endspeed="400" data-endeasing="Power0.easeOut">{{dest.groom}} & #38;{{dest.bride}}
+                    data-endspeed="400" data-endeasing="Power0.easeOut">{{dest.groom}} & {{dest.bride}}
                   </div>
+
+                  {% endfor %}
 
                   <!-- LAYER NR. 3 -->
                   <div class="tp-caption sfr str" data-x="center" data-hoffset="0" data-y="center" data-voffset="-30"
@@ -99,7 +103,7 @@
                   <div class="tp-caption slider_dateevent sfb stb tp-resizeme" data-x="center" data-hoffset="0"
                     data-y="center" data-voffset="70" data-speed="1200" data-start="3500" data-easing="Power4.easeOut"
                     data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
-                    data-endspeed="400" data-endeasing="Power4.easeOut">12th September, 2020
+                    data-endspeed="400" data-endeasing="Power4.easeOut">14th September, 2021
                     in London
                   </div>
 
@@ -123,10 +127,11 @@
                   <!-- LAYERS -->
 
                   <!-- LAYER NR. 1 -->
+                  {% for dest in dests %}
                   <div class="tp-caption tztitle-slider sfr stl tp-resizeme" data-x="center" data-hoffset="-210"
                     data-y="center" data-voffset="0" data-speed="1200" data-start="700" data-easing="Power4.easeOut"
                     data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
-                    data-endspeed="400" data-endeasing="Power4.easeOut">Kevin
+                    data-endspeed="400" data-endeasing="Power4.easeOut">{{dest.groom}}
                   </div>
 
                   <!-- LAYER NR. 2 -->
@@ -135,7 +140,7 @@
                     data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
                     data-endspeed="400" data-endeasing="Power4.easeOut">{{dest.bride}}
                   </div>
-
+                  {% endfor%}
                   <!-- LAYER NR. 3 -->
                   <div class="tp-caption tzcharacters2 customin customout tp-resizeme" data-x="center" data-hoffset="0"
                     data-y="center" data-voffset="15"
