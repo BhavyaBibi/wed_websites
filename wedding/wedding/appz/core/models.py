@@ -10,4 +10,5 @@ class Destination(models.Model):
     groom_image = models.ImageField(upload_to='uploads/', verbose_name='image')
     bride_image = models.ImageField(upload_to='uploads/', verbose_name='image')
     descrption = RichTextField(blank=True, null=True)
+    date = models.DateField()
 
