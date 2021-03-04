@@ -76,7 +76,7 @@
                   <div class="tp-caption tztitle2 tp-fade stt tp-resizeme" data-x="center" data-hoffset="0"
                     data-y="center" data-voffset="-85" data-speed="600" data-start="950" data-easing="Power0.easeInOut"
                     data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"
-                    data-endspeed="400" data-endeasing="Power0.easeOut">{{dest.groom}} &{{dest.bride}}
+                    data-endspeed="400" data-endeasing="Power0.easeOut">{{dest.groom}} & #38;{{dest.bride}}
                   </div>
 
                   <!-- LAYER NR. 3 -->
@@ -169,13 +169,13 @@
               <div class="col-md-3">
                 <div class="ourstory_infomation ourstory_infomation3">
                   <div class="story_user">
-                    <img alt="man1" class="story_user_img" src="{%static ''%}core/images/groom.jpg">
+                    <img alt="man1" class="story_user_img" src={{dest.groom_image.url}}>
                   </div>
                   <h4>{{dest.groom}}</h4>
                   <p>The groom</p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class=" col-md-6">
                 <h3 class="title_ourstory">OUR STORY</h3>
                 <div class="ourstory_content">
                   <p>We’ve created this website as a convenient and interactive way to share
@@ -198,7 +198,7 @@
               <div class="col-md-3">
                 <div class="ourstory_infomation ourstory_infomation3">
                   <div class="story_user">
-                    <img alt="woman1" class="story_user_img" src="{%static ''%}core/images/woman1.jpg">
+                    <img alt="woman1" class="story_user_img" src={{dest.bride_image.url}}>
                   </div>
                   <h4>{{dest.bride}}</h4>
                   <p>The bride</p>
@@ -213,7 +213,7 @@
   </div>
 </div>
 
-<div class="vc_row wpb_row vc_row-fluid vc_custom_1423192714427">
+<div class=" vc_row wpb_row vc_row-fluid vc_custom_1423192714427">
   <div class="nocontainer">
     {%for dest in dests%}
     <div class="vc_col-sm-12 wpb_column vc_column_container ">

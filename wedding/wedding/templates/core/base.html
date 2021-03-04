@@ -66,11 +66,13 @@
 								<button data-target=".nav-collapse" class="btn-navbar tz_icon_menu" type="button">
 									<i class="fa fa-bars"></i>
 								</button>
+								{%for dest in dests %}
 								<h3 class="tzlogo pull-left">
 									<a href="#home">
-										Kevin & Rashmi
+										{{dest.groom}} &{{dest.bride}}
 									</a>
 								</h3>
+								{%endfor%}
 								<button class="tz-search pull-right"> <i class="fa fa-search"></i></button>
 								<nav class="pull-right tznav-menu">
 									<ul id="menu-primary" class="tz-menu nav-collapse themeple_megemenu">
@@ -136,17 +138,19 @@
 						</div>
 					</aside>
 				</div>
+				{%for dest in dests %}
 				<div class="col-md-4 footerattr">
 					<aside id="widget_logo-2" class="widget_widget_logo widget">
 						<div class="tz_logo_widget">
 							<a href="">
-								Kevin & Rashmi
+								{{dest.groom}} &{{dest.bride}}
 							</a>
 							<p>All right server. <br>
 								Copyright by dwpinsider.com</p>
 						</div>
 					</aside>
 				</div>
+				{% endfor %}
 				<div class="col-md-4 footerattr">
 					<aside id="tz_social-2" class="widget_tz_social widget">
 						<h3 class="module-title title-widget"><span>GET IN TOUCH</span></h3>
