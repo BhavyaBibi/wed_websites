@@ -25,8 +25,8 @@ def login(request):
 def register(request):
 
     if request.method == 'POST':
-        first_name = request.POST['first_name']
-        last_name = request.POST['last_name']
+        groom = request.POST['groom']
+        bride = request.POST['bride']
         username = request.POST['username']
         password1 = request.POST['password1']
         password2 = request.POST['password2']
@@ -40,7 +40,7 @@ def register(request):
                 messages.info(request,'Email Taken')
                 return redirect('register')
             else:   
-                user = User.objects.create_user(username=username, password=password1, email=email,first_name=first_name,last_name=last_name)
+                user = User.objects.create_user(username=username, password=password1, email=email,groom=groom,bride=bride)
                 user.save();
                 print('user created')
                 return redirect('login')
